@@ -82,12 +82,11 @@ public class TextController : MonoBehaviour
             courtyard();
         }
     }
+
     void cell()
     {
-        text.text = "You are in a prison cell, and you want to escape. There are " +
-                    "some dirty sheets on the bed, a mirror on the wall, and the door " +
-                    "is locked from the outside.\n\n" +
-                    "Press S to view Sheets, M to view Mirror and L to view Lock";
+        text.text = "I'm in this filthy prison cell... I need to escape. There are some dirty sheets on the bed, a mirror on the wall, and the door " +
+                    "is locked from the outside.\n\n Press S to view Sheets, M to view Mirror and L to view Lock";
 
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -120,10 +119,8 @@ public class TextController : MonoBehaviour
 
     void sheets_0()
     {
-        text.text = "You can't believe you sleep in these things. Surely it's " +
-                    "time somebody changed them. The pleasures of prison life " +
-                    "I guess!\n\n" +
-                    "Press R to Return to roaming your cell";
+        text.text = "I can't believe I sleep in these things. Surely it's time to somebody changed them. The pleasures of prison life " +
+                    "I guess!\n\n Press R to Return to roaming your cell";
         if (Input.GetKeyDown(KeyCode.R))
         {
             myState = States.cell;
@@ -132,8 +129,7 @@ public class TextController : MonoBehaviour
 
     void sheets_1()
     {
-        text.text = "Holding a mirror in your hand doesn't make the sheets look " +
-                    "any better.\n\n" +
+        text.text = "Holding a mirror in my hand doesn't make the sheets look any better.\n\n" +
                     "Press R to Return to roaming your cell";
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -144,10 +140,8 @@ public class TextController : MonoBehaviour
 
     void lock_0()
     {
-        text.text = "This is one of those button locks. You have no idea what the " +
-                    "combination is. You wish you could somehow see where the dirty " +
-                    "fingerprints were, maybe that would help.\n\n" +
-                    "Press R to Return to roaming your cell";
+        text.text = "This is one of those button locks. I have no idea what the combination is. I wish I could somehow see where the dirty " +
+                    "fingerprints were, maybe that would help.\n\n Press R to Return to roaming your cell";
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -157,10 +151,8 @@ public class TextController : MonoBehaviour
 
     void lock_1()
     {
-        text.text = "You carefully put the mirror through the bars, and turn it round " +
-                    "so you can see the lock. You can just make out fingerprints around " +
-                    "the buttons. You press the dirty buttons, and hear a click.\n\n" +
-                    "Press O to Open, or R to Return to your cell";
+        text.text = "I carefully put the mirror through the bars, and turn it round so I can see the lock. I can just make out fingerprints around " +
+                    "the buttons. I press the dirty buttons, and hear a click.\n\n Press O to Open, or R to Return to your cell";
 
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -174,10 +166,8 @@ public class TextController : MonoBehaviour
 
     void cell_mirror()
     {
-        text.text = "You are still in your cell, and you STILL want to escape! There are " +
-                    "some dirty sheets on the bed, a mark where the mirror was, " +
-                    "and that pesky door is still there, and firmly locked!\n\n" +
-                    "Press S to view Sheets, or L to view Lock";
+        text.text = "I am still in my cell, and I STILL want to escape! There are some dirty sheets on the bed, a mark where the mirror was, " +
+                    "and that pesky door is still there, and firmly locked!\n\n Press S to view Sheets, or L to view Lock";
 
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -191,8 +181,8 @@ public class TextController : MonoBehaviour
 
     void corridor_0()
     {
-        text.text = "You are in a big corridor now. There are some stairs close to you and a small closet.\n\n" +
-                    "Press F to check the floor, S to go to the stairs or C to check the closet.";
+        text.text = "I am in a big corridor now. There are some stairs close to me and a small closet too.\n\n" +
+                    "Press F to check the corridor, S to go to the stairs or C to check the closet.";
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -212,8 +202,8 @@ public class TextController : MonoBehaviour
 
     void stairs_0()
     {
-        text.text = "While you were going to the stairs, you realize that there is no break time and you would be caught immediately." +
-                    "So you slowly walk back into the corridor to think of a better option.\n\n" +
+        text.text = "While I was going to the stairs, I realize that there is no break time and I would be caught immediately. " +
+                    "So I slowly walk back into the corridor to think of a better option.\n\n" +
                     "Press R to return to the corridor.";
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -236,8 +226,8 @@ public class TextController : MonoBehaviour
 
     void floor()
     {
-        text.text = "When you search the corridor looking for some other way to escape, you notice something on the floor." +
-                    "It's a hair clip! Maybe this can help you with something in the future.\n\n" +
+        text.text = "While I search the corridor looking for some other way to escape, I notice something on the floor. " +
+                    "It's a hair clip! Maybe this can help me with something in the future.\n\n" +
                     "Press H to take the hair clip or press R to return";
 
         if(Input.GetKeyDown(KeyCode.H))
@@ -252,7 +242,7 @@ public class TextController : MonoBehaviour
 
     void corridor_1()
     {
-        text.text = "I am in a big corridor now. There are some stairs close to me and a small closet.\n\n Press S to go to the stairs or C to check the closet.";
+        text.text = "I still have not figured out a way out of this place. There are some stairs close to me and a small closet.\n\n Press S to go to the stairs or C to check the closet.";
 
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -267,7 +257,7 @@ public class TextController : MonoBehaviour
 
     void stairs_1()
     {
-        text.text = "I do not think a little hair clip can defend you from all the prison guards. Maybe I should go back to the hallway.\n\n" +
+        text.text = "I do not think a little hair clip can defend me from all the prison guards. Maybe I should go back to the corridor.\n\n" +
                     "Press R to return.";
 
         if (Input.GetKeyDown(KeyCode.R))
